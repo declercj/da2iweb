@@ -6,7 +6,7 @@ li.list-group-item {
     color: #555555;
 }
 .list-group-item {
-    position: relative;
+    /*position: relative;*/
     display: inline-block;
     width: 22.5%;
     padding: 10px 15px;
@@ -17,14 +17,21 @@ li.list-group-item {
 li {
     background: transparent;
 }
-li:hover, li:focus {
-    background-color: #198764;
+li span:hover, li span:focus {
+    background-color: #F08A05;
     text-decoration: underline;
 }
 li:active, li:hover {
     outline: 0;
 }
+.logos {
 
+    /*position: absolute;*/
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 29px;
+}
 .list-group {
 }
 
@@ -34,13 +41,21 @@ li:active, li:hover {
 }
 
 body {
+    position: relative;
     background-color: #D2D2D4;
-}
+
+    }
 header, footer {
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 2%;
     background-color: #F08A05;
+    position: absolute;
+}
+header {
+    position: fixed;
+        padding-top: 8px;
+
 }
 
 main {
@@ -48,4 +63,6 @@ main {
     padding-right: 5%;
     padding-bottom: 2%;
     background-color: #ffffff;
+    /*position: absolute;*/
+
 }
