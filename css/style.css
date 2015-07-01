@@ -1,14 +1,13 @@
-.list-group-item:first-child {
+/*.list-group-item:first-child {
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
-}
+}*/	
 li.list-group-item {
     color: #555555;
 }
 .list-group-item {
-    /*position: relative;*/
+
     display: inline-block;
-    width: 22.5%;
     padding: 10px 15px;
     margin-bottom: -1px;
     background-color: #ffffff;
@@ -18,15 +17,15 @@ li {
     background: transparent;
 }
 li span:hover, li span:focus {
-    background-color: #F08A05;
+    background-color: #e55a23;
     text-decoration: underline;
 }
 li:active, li:hover {
     outline: 0;
 }
 .logos {
-
-    /*position: absolute;*/
+display: inline-block;
+width: 100%;
     background-color: #ffffff;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -35,34 +34,43 @@ li:active, li:hover {
 .list-group {
 }
 
+#logo-smile{
+	margin-left: 80px;
+}
 #logo-da2i {
     float: right;
     padding: 2% 2% 2% 2%;
+margin-right : inherit;
 }
 
-body {
-    position: relative;
-    background-color: #D2D2D4;
-
-    }
-header, footer {
+header {
+/**
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 2%;
-    background-color: #F08A05;
-    position: absolute;
+    padding-bottom: 2%;*/
+    background-color: #e55a23;
 }
 header {
-    position: fixed;
+	display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
         padding-top: 8px;
 
 }
 
 main {
-    padding-left: 5%;
-    padding-right: 5%;
+ /*   padding-left: 5%;
+    padding-right: 5%;*/
+  padding: 250px 20px 20px 20px;
     padding-bottom: 2%;
     background-color: #ffffff;
-    /*position: absolute;*/
+
 
 }
