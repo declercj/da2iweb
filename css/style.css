@@ -17,10 +17,11 @@ li {
     background: transparent;
 }
 li span:hover, li span:focus {
-    background-color: #e55a23;
+    
     text-decoration: underline;
 }
 li:active, li:hover {
+  background-color: #e55a23;
     outline: 0;
 }
 .logos {
@@ -52,7 +53,7 @@ header {
 }
 header {
 	display: inline-block;
-  position: fixed;
+  position: fixed, relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -64,11 +65,19 @@ header {
         padding-top: 8px;
 
 }
+section {
+  padding: 10px;
+  margin: 10px;
+  background-color: #e55a23;
+}
 
+section p {
+  background-color: #ffffff;
+}
 main {
  /*   padding-left: 5%;
     padding-right: 5%;*/
-  padding: 250px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
     padding-bottom: 2%;
     background-color: #ffffff;
 
