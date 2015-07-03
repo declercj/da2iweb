@@ -113,7 +113,15 @@ p {
 
 main {
     padding: 20px 20px 20px 20px;
+}
 
+#bilan p {
+    text-align: center;
+}
+#bilan h3 {
+    text-align: center;
+}
 
-
+section ul li {
+    padding-top: 5px;
 }
