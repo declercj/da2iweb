@@ -21,13 +21,13 @@
 			<div class="list-group">
 				<li class="list-group-item" id="1">
 					<span>
-						<i class="fa  fa-home fa-fw"></i>&nbsp;
+						<i class="fa  fa-home fa-lg fa-fw"></i>&nbsp;
 						<a href="#"><strong>Accueil</strong></a>
 					</span>
 				</li>
 				<li class="list-group-item" id="2">
 					<span>
-						<i class="fa fa-smile-o  fa-fw"></i>&nbsp;
+						<i class="fa fa-smile-o fa-lg fa-fw"></i>&nbsp;
 						<a href="#"><strong>Smile</strong></a>
 					</span>
 				</li>
@@ -38,17 +38,17 @@
 					</span>
 				</li>
 				<li class="list-group-item" id="4">
-					<span><i class="fa  fa-code fa-fw"></i>&nbsp;
+					<span><i class="fa  fa-code fa-lg fa-fw"></i>&nbsp;
 						<a href="#"><strong>Magento</strong></a>
 					</span>
 				</li>
 				<li class="list-group-item" id="5">
-					<span><i class="fa  fa-plus fa-fw"></i>&nbsp;
+					<span><i class="fa  fa-plus fa-lg fa-fw"></i>&nbsp;
 						<a href="#"><strong>Bilan</strong></a>
 					</span>
 				</li>
 				<li class="list-group-item" id="6">
-					<span><i class="fa  fa-play fa-fw"></i>&nbsp;
+					<span><i class="fa  fa-file-image-o fa-lg fa-fw"></i>&nbsp;
 						<a href="#"><strong>Crédits</strong></a>
 					</span>
 				</li>
@@ -133,13 +133,13 @@
 				<h3>Tunnel de vente</h3>
 				<p>
 					Cette partie concerne les développements du processus de commande, plus souvent appelé le tunnel de vente. C'est l'ensemble des étapes par lesquelles doit passer un consommateur pour valider son panier de commande. Il concerne donc :
-					<ul>
-						<li>le panier contenant les articles souhaités par le client,</li>
-						<li>une page d'identification, si l'utilisateur n'a pas de compte client ou s'il n'est pas authentifié,</li>
-						<li>une page de sélection du mode de livraison et l'adresse de livraison souhaitée,</li>
-						<li>une page pour choisir le mode paiement,</li>
-						<li>et une page de confirmation de commande.</li>
-					</ul>
+				<ul>
+				<li>le panier contenant les articles souhaités par le client,</li>
+				<li>une page d'identification, si l'utilisateur n'a pas de compte client ou s'il n'est pas authentifié,</li>
+				<li>une page de sélection du mode de livraison et l'adresse de livraison souhaitée,</li>
+				<li>une page pour choisir le mode paiement,</li>
+				<li>et une page de confirmation de commande.</li>
+			</ul>
 				</p>
 				<p>
 					Toutes ces étapes sont condensées sur une seule page web. Le formulaire de chaque étape est validé par des appels Ajax, qui déclenchent ou non l'accès à l'étape suivante. Je trouve que c'est la partie la plus difficile à maitriser, car il faut savoir quelles informations sont générées au chargement de la page et quelles sont celles mises à jours par la suite en fonctions des choix de l'utilisateur. Sur cette seconde phase de développement, j'ai été amené à intégrer la page d'identification et la page des mode de paiements.
@@ -161,22 +161,22 @@
 					Magento a clairement été pensé pour porter des sites marchands ambitieux et d'envergure.  Smile et Magento ont signé un partenariat stratégique permettant de proposer et de déployer une solution d'e-commerce performante et complète à leurs clients.
 				</p>
 				<h3>Fonctionnement</h3>
-					<p>
-						La structure des pages est organisée à l'aide de blocs auxquels on peut associer des fichiers template qui se chargeront de l'affichage du code HTML.
-					</p>
-					<p>
-						Les blocs de structures sont utilisés dans le seul but de gérer la structure visuelle d’une page comme l'entête et le corps de la page. Les blocs de contenus génèrent du contenu à l’intérieur de chaque bloc de structure. Une liste de produits, le contenu du panier de commande sont des exemples de bloc de contenus.
-						<br>
-						On peut décider des données et informations qui pourront être accessibles par chaque bloc et inclure du code PHP dans les templates pour les besoins de l'affichage.
-					</p>
-					<p>
-						La définition de l'organisation des blocs de structure se fait via un fichier XML, appelé plan de page ou layout. Ils contrôlent également les méta informations et l’encodage des pages. Ceci a deux impacts importants. D'une part, la modification est simplifiée : l'intégrateur peut facilement changer les blocs de place sans être un expert du développement. D'autre part, la structure XML peut être surchargée par des modules, ce qui permet d'ajouter ou de retirer des éléments sans toucher aux fichiers d'origine.
-						<br>
-						Par ailleurs, il est tout à fait possible d'ajouter des blocs en agissant dans le contrôleur ou d'ajouter des templates à un bloc par programmation même s'il est recommandé de passer par les plans de pages autant que possible afin de faciliter la séparation du code et du rendu visuel.
-					</p>
-					<p>
-						Les apparences ou « skins » sont des ensembles de Javascript, CSS et fichiers images qui complètent les blocs de contenus. Magento prévoit des espaces distincts pour tous les designs créés, ce qui permet de les faire cohabiter et de passer de l'un à l'autre avec facilité.
-					</p>
+				<p>
+					La structure des pages est organisée à l'aide de blocs auxquels on peut associer des fichiers template qui se chargeront de l'affichage du code HTML.
+				</p>
+				<p>
+					Les blocs de structures sont utilisés dans le seul but de gérer la structure visuelle d’une page comme l'entête et le corps de la page. Les blocs de contenus génèrent du contenu à l’intérieur de chaque bloc de structure. Une liste de produits, le contenu du panier de commande sont des exemples de bloc de contenus.
+					<br>
+					On peut décider des données et informations qui pourront être accessibles par chaque bloc et inclure du code PHP dans les templates pour les besoins de l'affichage.
+				</p>
+				<p>
+					La définition de l'organisation des blocs de structure se fait via un fichier XML, appelé plan de page ou layout. Ils contrôlent également les méta informations et l’encodage des pages. Ceci a deux impacts importants. D'une part, la modification est simplifiée : l'intégrateur peut facilement changer les blocs de place sans être un expert du développement. D'autre part, la structure XML peut être surchargée par des modules, ce qui permet d'ajouter ou de retirer des éléments sans toucher aux fichiers d'origine.
+					<br>
+					Par ailleurs, il est tout à fait possible d'ajouter des blocs en agissant dans le contrôleur ou d'ajouter des templates à un bloc par programmation même s'il est recommandé de passer par les plans de pages autant que possible afin de faciliter la séparation du code et du rendu visuel.
+				</p>
+				<p>
+					Les apparences ou « skins » sont des ensembles de Javascript, CSS et fichiers images qui complètent les blocs de contenus. Magento prévoit des espaces distincts pour tous les designs créés, ce qui permet de les faire cohabiter et de passer de l'un à l'autre avec facilité.
+				</p>
 				<h3>En savoir plus</h3>
 				<p>
 					Si vous voulez découvrir cette plateforme e-commerce, rendez-vous sur le <a href="http://www.magento.com">site officiel de Magento</a>.
