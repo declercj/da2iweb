@@ -26,7 +26,7 @@ a {
 li {
     background: transparent;
 }
-li:active, li:hover {
+.list-group-item:active, .list-group-item:hover {
     background-color: #e55a23;
     outline: 0;
 }
@@ -38,7 +38,7 @@ li:active, li:hover {
     display: inline-block;
     width: 100%;
     background-color: #ffffff;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-right: 29px;
 }
 .list-group {
@@ -59,6 +59,22 @@ li:active, li:hover {
     float: right;
     padding: 2% 2% 2% 2%;
     margin-right : inherit;
+}
+#logo-lille-1 {
+    width: 350px;
+}
+.img-holder {
+    padding-top: 20px;
+    text-align: center
+}
+
+.two-col {
+    display: inline-block;
+}
+.col {
+    float: left;
+    width: 40%;
+    padding: 5px 5% 5px 5%;
 }
 body {
     margin : auto;
@@ -92,7 +108,7 @@ section {
 
 p {
     text-align: justify;
-    font-size: 22px;
+    font-size: 15px;
 }
 
 main {

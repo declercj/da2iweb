@@ -12,8 +12,8 @@
 	<body>
 		<header>
 			<div class="logos">
-				<img id="logo-smile"  width="335px" src="images/logo-smile.png" alt="Logo de Smile" />
-				<img id="logo-da2i"  width="402px" src="images/logo-da2i.png" alt="Logo de la licence DA2I"/>
+				<img id="logo-smile"  width="335px" src="images/logo-smile.png" alt="Logo de Smile"></img>
+				<img id="logo-da2i"  width="402px" src="images/logo-da2i.png" alt="Logo de la licence DA2I"></img>
 			</div>
 			<div class="title">
 				<h1>Stage Ingénieur Études et Développement</h1>
@@ -68,13 +68,22 @@
 					et mettre en pratique les connaissances acquises au cours de ma formation sur un projet réel et d'envergure.
 					Ce stage constitue également ma première expérience en entreprise.
 				</p>
+				<div class="img-holder">
+					<img id="logo-lille-1"src="images/logo-lille1-2014.png" alt="logo université lille 1"></img>
+				</div>
 			</section>
 			<section id="entreprise">
 				<h2>Présentation de l'entreprise : Smile</h2>
 				<p>
 					Smile est une entreprise de services du numérique (ESN), ou société de services en ingénierie informatique. L'entreprise compte près de 800 collaborateurs, répartis en 16 agences dont la moitié en France. Ajoutant à cela une expertise open source reconnue dans une variété de domaines, Smile est le premier intégrateur européen de logiciel libre. La société génère 53 millions d'euros de chiffre d'affaires en 2014, en réalisant 300 projets par an.
+					<br>
 					Smile a réalisé quelques-uns des plus grands sites de l'Internet français, des sites à forte valeur ajoutée et à forte audience. Smile a également été choisie par les plus grandes entreprises françaises pour concevoir, réaliser et maintenir des applicatifs Intranet stratégiques, servant des centaines d'utilisateurs sur des milliers de transactions.
+				</p>
+				<p>
 					Smile intervient en conseil, en conception, intégration et réalisation, dans le déploiement de solutions open source, ainsi que la conception et la réalisation de plateformes appuyées sur des produits et outils open source. L'entreprise propose également de la formation et de l'hébergement. L'agence de Lille compte une trentaine de collaborateur et est en pleine phase de recrutement.
+				</p>
+				<p>
+					Pour plus d'informations sur Smile, ses solutions, ses livres blancs à propos de l'open-source, ses offres d'emploi et de stage consultez le <a href="http://www.smile.fr" alt="site web smile">site web de Smile</a>. 
 				</p>
 			</section>
 			<section id="projet">
@@ -89,11 +98,8 @@
 					sur le commerce en ligne différentes.
 				</p>
 				<p>
-					La solution principale retenue est <a href="#magento">Magento</a> car cette plateforme permet de gérer et implémenter tous les points que je viens d'énoncer.
+					La solution principale retenue est <a href="#magento">Magento</a>.
 					Magento bénéficie d'une grande modularité, et propose de base un grand nombre de fonctionnalités administrable.
-					Le simple fait d'installer Magento crée une base de données, une interface utilisateur et administrateur prêtes à l'emploi.
-					Il suffit alors d'importer les informations des produits et les éventuelles données clients existantes, configurer les modes de paiement et
-					de livraison souhaités et on obtient une application de base déjà utilisable.
 				</p>
 				<h2>Travaux effectués</h2>
 				<h3>Processus d'achat</h3>
@@ -110,7 +116,7 @@
 					on m'a demandé d'implémenter la gestion des avis client. Un client peut en effet donner une note  et
 					une appréciation à un produit qu'il a commandé. Mon travail était donc d'installer le module Magento prestataire disponible sur le Store officiel Magento Connect,
 					le configurer pour répondre aux spécifications du client, et créer le thème afin que le rendu visuel respecte la maquette du site.
-					Cette tâche m'a permis d'appréhender Magento en douceur et d'appliquer ce que j'ai appris quand je me suis formé sur la solution.
+					Cette tâche m'a permis d'appréhender Magento.
 				</p>
 				<h4>Module de prévisualisation de pages</h4>
 				<p>
@@ -119,23 +125,88 @@
 					donnée. Il servirait principalement pour la page d'accueil qui dispose de plusieurs blocs de contenu administrable via le back
 					office pour communiquer sur les promotions en cours ou la nouvelle collection, mais peut être utilisé sur toutes les pages.
 				</p>
+				<h4>blocs de recommendation</h4>
+				<p>
+					Pour apprendre les autres aspects de Magento, on m'a ensuite demandé de créer plusieurs blocs de recommandations pour la page d'accueil du site web.
+					Ce sont des blocs de contenus spéciaux, appelé widgets. Il sont paramétrables et éditables depuis l'interface d'administration, à la différence des autres blocs qui sont chargés dynamiquement. L'implémentation d'un widget se fait de la même manière qu'un bloc normal sauf qu'il possède un fichier de configuration XML supplémentaire servant à la création d'un formulaire dans le back-office pour permettre son édition.
+				</p>
+				<h3>Tunnel de vente</h3>
+				<p>
+					Cette partie concerne les développements du processus de commande, plus souvent appelé le tunnel de vente. C'est l'ensemble des étapes par lesquelles doit passer un consommateur pour valider son panier de commande. Il concerne donc :
+					<ul>
+						<li>le panier contenant les articles souhaités par le client,</li>
+						<li>une page d'identification, si l'utilisateur n'a pas de compte client ou s'il n'est pas authentifié,</li>
+						<li>une page de sélection du mode de livraison et l'adresse de livraison souhaitée,</li>
+						<li>une page pour choisir le mode paiement,</li>
+						<li>et une page de confirmation de commande.</li>
+					</ul>
+				</p>
+				<p>
+					Toutes ces étapes sont condensées sur une seule page web. Le formulaire de chaque étape est validé par des appels Ajax, qui déclenchent ou non l'accès à l'étape suivante. Je trouve que c'est la partie la plus difficile à maitriser, car il faut savoir quelles informations sont générées au chargement de la page et quelles sont celles mises à jours par la suite en fonctions des choix de l'utilisateur. Sur cette seconde phase de développement, j'ai été amené à intégrer la page d'identification et la page des mode de paiements.
+				</p>
+
 			</section>
 			<section id="magento">
 				<h2>Magento : plateforme e-commerce open-source</h2>
+				<h3>Présentation générale</h3>
 				<p>
-					Haec ubi latius fama vulgasset missaeque relationes adsiduae Gallum Caesarem permovissent, quoniam magister equitum longius ea tempestate distinebatur, iussus comes orientis Nebridius contractis undique militaribus copiis ad eximendam periculo civitatem amplam et oportunam studio properabat ingenti, quo cognito abscessere latrones nulla re amplius memorabili gesta, dispersique ut solent avia montium petiere celsorum.
+					Magento est une plateforme de commerce électronique libre lancée le 31 mars 2008. Créée par l'éditeur américain Varien, une entreprise californienne spécialisée dans le développement et le consulting web. Elle se base sur le Framework Zend.
+				</p>
+				<p>
+					Magento a été conçu en partant de l'idée que chaque projet e-commerce est unique en son genre, puisqu'il n'y a pas deux commerces identiques.
+					L'architecture modulaire de Magento redonne le contrôle aux e-commerçants et n'impose aucune contrainte aux processus métiers ou aux flux d'entreprise. 
+					Magento se compose de différents éléments qui définissent le fonctionnement, le design et la logique métier du site. L’une des caractéristiques majeures de Magento est d'offrir la possibilité de gérer plusieurs sites et boutiques à partir d’une seule interface d’administration (back office). Cela permet au gestionnaire du site marchand de gérer des boutiques accessibles depuis plusieurs adresses distinctes, d’afficher les mêmes produits dans différentes langues depuis la même adresse, le tout associé à divers paramétrages. Il est possible à tout moment, d'étendre le site web à d'autres langues en fonction de l'expansion des ventes à l'international.
+				</p>
+				<p>
+					Magento a clairement été pensé pour porter des sites marchands ambitieux et d'envergure.  Smile et Magento ont signé un partenariat stratégique permettant de proposer et de déployer une solution d'e-commerce performante et complète à leurs clients.
+				</p>
+				<h3>Fonctionnement</h3>
+					<p>
+						La structure des pages est organisée à l'aide de blocs auxquels on peut associer des fichiers template qui se chargeront de l'affichage du code HTML.
+					</p>
+					<p>
+						Les blocs de structures sont utilisés dans le seul but de gérer la structure visuelle d’une page comme l'entête et le corps de la page. Les blocs de contenus génèrent du contenu à l’intérieur de chaque bloc de structure. Une liste de produits, le contenu du panier de commande sont des exemples de bloc de contenus.
+						<br>
+						On peut décider des données et informations qui pourront être accessibles par chaque bloc et inclure du code PHP dans les templates pour les besoins de l'affichage.
+					</p>
+					<p>
+						La définition de l'organisation des blocs de structure se fait via un fichier XML, appelé plan de page ou layout. Ils contrôlent également les méta informations et l’encodage des pages. Ceci a deux impacts importants. D'une part, la modification est simplifiée : l'intégrateur peut facilement changer les blocs de place sans être un expert du développement. D'autre part, la structure XML peut être surchargée par des modules, ce qui permet d'ajouter ou de retirer des éléments sans toucher aux fichiers d'origine.
+						<br>
+						Par ailleurs, il est tout à fait possible d'ajouter des blocs en agissant dans le contrôleur ou d'ajouter des templates à un bloc par programmation même s'il est recommandé de passer par les plans de pages autant que possible afin de faciliter la séparation du code et du rendu visuel.
+					</p>
+					<p>
+						Les apparences ou « skins » sont des ensembles de Javascript, CSS et fichiers images qui complètent les blocs de contenus. Magento prévoit des espaces distincts pour tous les designs créés, ce qui permet de les faire cohabiter et de passer de l'un à l'autre avec facilité.
+					</p>
+				<h3>En savoir plus</h3>
+				<p>
+					Si vous voulez découvrir cette plateforme e-commerce, rendez-vous sur le <a href="http://www.magento.com">site officiel de Magento</a>.
 				</p>
 			</section>
 			<section id="bilan">
 				<h2>Bilan de ce stage</h2>
-				<p>
-					Post hanc adclinis Libano monti Phoenice, regio plena gratiarum et venustatis, urbibus decorata magnis et pulchris; in quibus amoenitate celebritateque nominum Tyros excellit, Sidon et Berytus isdemque pares Emissa et Damascus saeculis condita priscis.
-				</p>
+				<div class="two-col">
+					<div class="col">
+						<h3>Bilan technique</h3>
+						<p>
+							Post hanc adclinis Libano monti Phoenice, regio plena gratiarum et venustatis, urbibus decorata magnis et pulchris; in quibus amoenitate celebritateque nominum Tyros excellit, Sidon et Berytus isdemque pares Emissa et Damascus saeculis condita priscis.
+						</p>
+					</div>
+					<div class="col">
+						<h3>Bilan humain</h3>
+						<p>
+							Post hanc adclinis Libano monti Phoenice, regio plena gratiarum et venustatis, urbibus decorata magnis et pulchris; in quibus amoenitate celebritateque nominum Tyros excellit, Sidon et Berytus isdemque pares Emissa et Damascus saeculis condita priscis.
+						</p>
+					</div>
+				</div>
 			</section>
 			<section id="credits">
-				<h2>Crédits</h2>
+				<h2>Crédits Images</h2>
 				<p>
-					Post hanc adclinis Libano monti Phoenice, regio plena gratiarum et venustatis, urbibus decorata magnis et pulchris; in quibus amoenitate celebritateque nominum Tyros excellit, Sidon et Berytus isdemque pares Emissa et Damascus saeculis condita priscis.
+					<ul>
+						<li><a href="http://www.smile.fr" alt="site web smile">Smile</a></li>
+						<li><a href="http://da2i.univ-lille1.fr" alt="site web licence da2i">Licence professionnelle DA2I</li>
+						<li><a href="http://www.univ-lille1.fr" alt="site web université lille 1">Université de Lille 1, sciences et technologies</a></li>
+					</ul>
 				</p>
 			</section>
 		</main>
