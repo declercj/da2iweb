@@ -5,60 +5,72 @@
 		<title>Titre</title>
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script>
-			$(document).ready(function(){
-
-				var tab = Array;
-				tab[1] = '#accueil';
-				tab[2] = '#entreprise';
-				tab[3] = '#projet';
-				tab[4] = '#magento';
-				tab[5] = '#bilan';
-				var active = 1;
-				$('.list-group-item').bind('click', function(){
-					var elem = $(this);
-					var id = elem.attr('id');
-					if(tab[id] != tab[active]) {
-						$(tab[active]).slideToggle('slow');
-						active = id;
-						$(tab[active]).slideToggle('slow');
-					}
-				});
-			});
-		</script>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/main.js"></script>
 	</head>
 
 	<body>
 		<header>
 			<div class="logos">
-				<img id="logo-smile"  width="335px" src="images/logo-smile.png" />
-				<img id="logo-da2i"  width="402px" src="images/logo-da2i.png" />
+				<img id="logo-smile"  width="335px" src="images/logo-smile.png" alt="Logo de Smile" />
+				<img id="logo-da2i"  width="402px" src="images/logo-da2i.png" alt="Logo de la licence DA2I"/>
 			</div>
 			<div class="title">
 				<h1>Stage Ingénieur Études et Développement</h1>
 			</div>
 			<div class="list-group">
-				<li class="list-group-item" id="1" ><span><i class="fa fa-home fa-fw">  </i>&nbsp;<a><strong>Accueil</strong></a></span></li>
-				<li class="list-group-item" id="2"><span><i class="fa fa-book fa-fw">  </i>&nbsp;<a><strong>L'entreprise</strong></a></span></li>
-				<li class="list-group-item" id="3"><span><i class="fa fa-pencil fa-fw"></i>&nbsp;<a><strong>Projet</strong></a></span></li>
-				<li class="list-group-item" id="4"><span><i class="fa fa-pencil fa-fw"></i>&nbsp;<a><strong>Magento</strong></a></span></li>
-				<li class="list-group-item" id="5"><span><i class="fa fa-cog fa-fw">   </i>&nbsp;<a><strong>Bilan</strong></a></span></li>
+				<li class="list-group-item" id="1">
+					<span>
+						<i class="fa  fa-home fa-fw"></i>&nbsp;
+						<a href="#"><strong>Accueil</strong></a>
+					</span>
+				</li>
+				<li class="list-group-item" id="2">
+					<span>
+						<i class="fa fa-smile-o  fa-fw"></i>&nbsp;
+						<a href="#"><strong>Smile</strong></a>
+					</span>
+				</li>
+				<li class="list-group-item" id="3">
+					<span>
+						<i class="fa fa-reorder  fa-fw"></i>&nbsp;
+						<a href="#"><strong>Projet</strong></a>
+					</span>
+				</li>
+				<li class="list-group-item" id="4">
+					<span><i class="fa  fa-code fa-fw"></i>&nbsp;
+						<a href="#"><strong>Magento</strong></a>
+					</span>
+				</li>
+				<li class="list-group-item" id="5">
+					<span><i class="fa  fa-plus fa-fw"></i>&nbsp;
+						<a href="#"><strong>Bilan</strong></a>
+					</span>
+				</li>
+				<li class="list-group-item" id="6">
+					<span><i class="fa  fa-play fa-fw"></i>&nbsp;
+						<a href="#"><strong>Crédits</strong></a>
+					</span>
+				</li>
 			</div>
 		</header>
 		<main>
 			<section id="accueil" style="display: block">
 				<h2>Présentation du stage de fin d'études</h2>
 				<p>
-					Cette page est destinée à vous présenter mon stage de fin d'études en entreprise. J'ai réalisé ce stage pour valider ma licence professionnelle SIL option DA2I (Développement et Administration Internet et Intranet).
-					Mon stage s'est déroulé au sein de l'agence <strong>Smile Lille</strong>. <a href="#entreprise">Présentation de Smile</a>
-					J'ai été amené à travailler pour <strong>Devred</strong>. La célèbre marque de vêtements pour Homme désirait en effet repenser toute sa plateforme de vente de vêtements en ligne, qui était basée sur une technologie maintenant vieillissante et difficile à maintenir avec l'arrivée de nouvelles technologies.
-					Les objectifs pour moi durant ce stage étaient multiples : me familiariser avec la plateforme e-commerce Magento, et mettre en pratique les connaissances acquises au cours de ma formation sur un projet réel et d'envergure. Ce stage constitue également ma première expérience en entreprise.
-
+					Cette page est destinée à vous présenter mon stage de fin d'études en entreprise. J'ai réalisé ce stage pour valider ma <strong>licence professionnelle SIL option DA2I</strong> (Développement et Administration Internet et Intranet).
+					Mon stage s'est déroulé au sein de l'agence <strong>Smile Lille</strong>.
+				</p>
+				<p>
+					J'ai été amené à travailler pour <strong>Devred</strong>. La célèbre marque de vêtements pour Homme désirait en effet repenser toute sa plateforme de vente de vêtements en ligne, qui était basée sur une technologie
+					maintenant difficile à maintenir avec l'arrivée de nouvelles technologies.<br>
+					Les objectifs pour moi durant ce stage étaient multiples : me familiariser avec la plateforme e-commerce <strong>Magento</strong>,
+					et mettre en pratique les connaissances acquises au cours de ma formation sur un projet réel et d'envergure.
+					Ce stage constitue également ma première expérience en entreprise.
 				</p>
 			</section>
 			<section id="entreprise">
-				<h2>Présentation de l'entreprise</h2>
+				<h2>Présentation de l'entreprise : Smile</h2>
 				<p>
 					Smile est une entreprise de services du numérique (ESN), ou société de services en ingénierie informatique. L'entreprise compte près de 800 collaborateurs, répartis en 16 agences dont la moitié en France. Ajoutant à cela une expertise open source reconnue dans une variété de domaines, Smile est le premier intégrateur européen de logiciel libre. La société génère 53 millions d'euros de chiffre d'affaires en 2014, en réalisant 300 projets par an.
 					Smile a réalisé quelques-uns des plus grands sites de l'Internet français, des sites à forte valeur ajoutée et à forte audience. Smile a également été choisie par les plus grandes entreprises françaises pour concevoir, réaliser et maintenir des applicatifs Intranet stratégiques, servant des centaines d'utilisateurs sur des milliers de transactions.
@@ -68,7 +80,44 @@
 			<section id="projet">
 				<h2>Le projet</h2>
 				<p>
-					Sed ut tum ad senem senex de senectute, sic hoc libro ad amicum amicissimus scripsi de amicitia. Tum est Cato locutus, quo erat nemo fere senior temporibus illis, nemo prudentior; nunc Laelius et sapiens (sic enim est habitus) et amicitiae gloria excellens de amicitia loquetur. Tu velim a me animum parumper avertas, Laelium loqui ipsum putes. C. Fannius et Q. Mucius ad socerum veniunt post mortem Africani; ab his sermo oritur, respondet Laelius, cuius tota disputatio est de amicitia, quam legens te ipse cognosces.
+					Devred s'est tourné vers Smile avec la mission d'assurer le refonte totale du site web devred.com.
+					Ceci implique donc l'adaptation du modèle de données et l'import de ces données depuis la base d'origine,
+					le développement d'une nouvelle interface pour les acheteurs et d'un portail d'administration du contenu et
+					de la configuration de la plateforme.
+					L'autre point essentiel de ce projet est de faciliter l'internationalisation de la boutique,
+					pouvoir proposer le site web dans différentes langues, avec des devises monétaires et des lois
+					sur le commerce en ligne différentes.
+				</p>
+				<p>
+					La solution principale retenue est <a href="#magento">Magento</a> car cette plateforme permet de gérer et implémenter tous les points que je viens d'énoncer.
+					Magento bénéficie d'une grande modularité, et propose de base un grand nombre de fonctionnalités administrable.
+					Le simple fait d'installer Magento crée une base de données, une interface utilisateur et administrateur prêtes à l'emploi.
+					Il suffit alors d'importer les informations des produits et les éventuelles données clients existantes, configurer les modes de paiement et
+					de livraison souhaités et on obtient une application de base déjà utilisable.
+				</p>
+				<h2>Travaux effectués</h2>
+				<h3>Processus d'achat</h3>
+				<p>
+					La première phase de développement concerne le processus d'achat. C'est la plus grande phase de développement du projet.
+					Elle regroupe l'import des produits dans la base, le développement et l'intégration de la page d'accueil, des page de produit
+					et de liste de produits, l'intégration des blocs de recommandations sur toutes les pages.
+					En bref, tout le catalogue de produits et l'ensemble des pages principales qu'un consommateur consulte lorsqu'il visite une boutique
+					en ligne.
+				</p>
+				<h4>Gestion des avis clients</h4>
+				<p>
+					Comme c'était mon premier développement sous Magento après une dizaine de jours de formation autonome,
+					on m'a demandé d'implémenter la gestion des avis client. Un client peut en effet donner une note  et
+					une appréciation à un produit qu'il a commandé. Mon travail était donc d'installer le module Magento prestataire disponible sur le Store officiel Magento Connect,
+					le configurer pour répondre aux spécifications du client, et créer le thème afin que le rendu visuel respecte la maquette du site.
+					Cette tâche m'a permis d'appréhender Magento en douceur et d'appliquer ce que j'ai appris quand je me suis formé sur la solution.
+				</p>
+				<h4>Module de prévisualisation de pages</h4>
+				<p>
+					J'ai eu pour travail par la suite l'implémentation complète d'une fonctionnalités, la prévisualisation de pages.
+					Comme son nom l'indique, cette fonctionnalités doit permettre de donner un rendu visuel d'une page du site à une date
+					donnée. Il servirait principalement pour la page d'accueil qui dispose de plusieurs blocs de contenu administrable via le back
+					office pour communiquer sur les promotions en cours ou la nouvelle collection, mais peut être utilisé sur toutes les pages.
 				</p>
 			</section>
 			<section id="magento">
@@ -79,6 +128,12 @@
 			</section>
 			<section id="bilan">
 				<h2>Bilan de ce stage</h2>
+				<p>
+					Post hanc adclinis Libano monti Phoenice, regio plena gratiarum et venustatis, urbibus decorata magnis et pulchris; in quibus amoenitate celebritateque nominum Tyros excellit, Sidon et Berytus isdemque pares Emissa et Damascus saeculis condita priscis.
+				</p>
+			</section>
+			<section id="credits">
+				<h2>Crédits</h2>
 				<p>
 					Post hanc adclinis Libano monti Phoenice, regio plena gratiarum et venustatis, urbibus decorata magnis et pulchris; in quibus amoenitate celebritateque nominum Tyros excellit, Sidon et Berytus isdemque pares Emissa et Damascus saeculis condita priscis.
 				</p>
